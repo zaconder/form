@@ -1,0 +1,41 @@
+#!/bin/bash
+VAR1="Freshman"
+VAR2="Sophmore"
+VAR3="Junior"
+VAR4="Senior"
+VAR5="Mathematics"
+VAR6="Computer Science"
+VAR7="Information Technology"
+
+echo "Please enter 1-4"
+read input
+
+if [ $input = "1" ]; then
+formative=$VAR1
+elif [ $input = "2" ]; then
+formative=$VAR2
+elif [ $input = "3" ]; then
+formative=$VAR3
+elif [ $input = "4" ]; then
+formative=$VAR4
+fi
+
+echo "Please enter a M, C, or I"
+read input2
+
+if [ $input2 = "M" ]; then
+formative2=$VAR5
+elif [ $input2 = "m" ]; then
+formative2=$VAR5
+elif [ $input2 = "C" ]; then
+formative2=$VAR6
+elif [ Rinput2 = "c" ]; then
+formative2=$VAR6
+elif [ $input2 = "I" ]; then
+formative2=$VAR7
+elif [ $input2 = "i" ]; then
+formative2=$VAR7
+fi
+
+echo "You are a $formative majoring in $formative2"
+
